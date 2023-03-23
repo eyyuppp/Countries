@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="selectedCountry"
+            type="com.eyyuperdogan.countrieslist.model.CountryModel" />
+    </data>
+
+<RelativeLayout
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailsFragment">
+    <ImageView
+        android:downloadUrl="@{selectedCountry.imageUrl}"
+        android:layout_marginTop="130dp"
+        android:id="@+id/countryDetailsImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher_round"
+        android:paddingTop="10dp"
+        android:scaleType="fitCenter"
+        android:minHeight="200dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryDetailsImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="@{selectedCountry.countryName}"
+        android:textColor="#EAD949"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:textColor="#EAD949"
+        android:id="@+id/txtCountryCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCountryName"
+        android:text="@{selectedCountry.countryCapital}"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp">
+
+    </TextView>
+
+    <TextView
+        android:textColor="#EAD949"
+        android:id="@+id/txtCountryRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCountryCapital"
+        android:text="@{selectedCountry.countryRegion}"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp">
+
+    </TextView>
+
+    <TextView
+        android:textColor="#EAD949"
+        android:id="@+id/textCountryCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCountryRegion"
+        android:text="@{selectedCountry.countryCurrency}"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp">
+
+    </TextView>
+
+    <TextView
+        android:textColor="#EAD949"
+        android:id="@+id/txtCountryLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCountryCurrency"
+        android:text="@{selectedCountry.countryLanguage}"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp">
+
+    </TextView>
+</RelativeLayout>
+</layout>
