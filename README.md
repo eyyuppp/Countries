@@ -38,7 +38,7 @@ LICENSE
 
 MIT License
 
-Copyright (c) 2023 ishak erdoğan
+Copyright (c) 2023 EYYÜP ERDOĞAN
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
